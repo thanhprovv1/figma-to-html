@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+/* ==============code thuộc tính chung============= */
+a {
+    text-decoration: none;
+
+
+}
+
+.maincontent{
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn{
+    display: inline-block;
+    min-width: 118px;
+    padding: 0px 16px;
+    line-height: 50px;
+    color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 600;
+        border-radius: 24.5px;
+            background: #171100;
+        /* 175% */
+}
+
+/* =======================header================= */
+.header{
+    background: #fce9b6;
+}
+.header .body{
+    display: flex;
+    align-items: center;
+    padding: 36px 0 8px;
+}
+
+.header.fixed{
+    position: sticky;
+    top: -28px;
+}
+.nav{
+    margin-left: auto;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav a{
+    position: relative;
+    color: #5F5B53;
+    font-size: 1.6rem;
+    padding: 8px 21px;       
+}
+
+.nav a:hover {
+color: #171100;
+text-shadow: 1px 0 0 currentColor;
+        
+}
+
+.nav li.active a::after{
+    display: block;
+    position: absolute;
+    left: 21px;
+    bottom: 6px;
+    content: "";
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background: #171100;
+
+}
+
+.header .btn-sign-up{
+    min-width: 144px;
+}
+
+.header .action{
+    margin-left: 49px;
+}
